@@ -12,21 +12,20 @@ background-position: center 1%">
             <!-- First row -->
             <h1 class="text-6xl py-1.5
             text-dark-blue">Elijah Mejilla <Emojis /></h1>
-            <h3 class="font-mono text-lg text-gray-400 italic">web developer & writer</h3>
+            <h3 class="font-display text-xl text-gray-400 italic">web developer & writer</h3>
         </div>  
 
-        <div class="font-display my-8 text-lg text-gray-700 max-w-prose">
+        <div class="font-display my-10 text-lg/8 text-gray-700 max-w-prose">
             <p class="mb-5">Hey there! I'm Elijah—an aspiring web developer and computer scientist.</p>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
-        <hr class="border border-gray-200 my-4">
         <Subsection text="projects"/>
 
         <div class="h-screen"></div>
     </section>
 </main> 
 
-<div class="absolute left-16 top-80 text-gray-400 cursor-pointer">
+<div class="absolute left-16 top-200 text-gray-400 cursor-pointer">
     <pre class="font-display">
 　　　　　 　 ____        
 　　　　　／＞　　フ     
@@ -41,7 +40,7 @@ background-position: center 1%">
     </pre>
 </div>
 
-<div class="absolute right-25 top-140 text-gray-400 cursor-pointer">
+<div class="absolute right-25 top-320 text-gray-400 cursor-pointer">
     <pre class="font-display">
 ⠀ ／l、
 （ﾟ､ ｡ ７
