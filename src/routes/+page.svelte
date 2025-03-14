@@ -1,38 +1,51 @@
-<main class="h-screen flex justify-center">
-    <section class="w-7/12 pt-30 pl-5 border">
-        <div class="grid grid-cols-[100px_1fr] grid-rows-2">
+<script>
+    import background from '$lib/images/background (11).png'
+    import Emojis from '$lib/components/Emojis.svelte'
+    import Subsection from '$lib/components/Subsection.svelte' 
+</script>
+
+<main class="h-screen flex justify-center bg-no-repeat font-display"
+style="background-image: url('{background}'); background-size: 100% auto;
+background-position: center 1%">
+    <section class="w-7/12 pt-24 mt-45">
+        <div class="flex flex-col">
             <!-- First row -->
-            <div class="text-7xl col-start-1 col-end-2 row-span-full ">{currentEmoji}</div>
-            <h1 class="font-display text-5xl text-gray-700 pt-1 pl-2">Elijah Mejilla</h1>
-        
-            <h3 class="font-display text-lg pt-0.5 pl-2 text-gray-400 italic">web developer, writer</h3>
+            <h1 class="text-6xl py-1.5
+            text-dark-blue">Elijah Mejilla <Emojis /></h1>
+            <h3 class="font-mono text-lg text-gray-400 italic">web developer & writer</h3>
         </div>  
+
+        <div class="font-display my-8 text-lg text-gray-700 max-w-prose">
+            <p class="mb-5">Hey there! I'm Elijah—an aspiring web developer and computer scientist.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <hr class="border border-gray-200 my-4">
+        <Subsection text="projects"/>
+
+        <div class="h-screen"></div>
     </section>
 </main> 
 
-<script lang="ts">
-    import { onMount, onDestroy } from "svelte";
+<div class="absolute left-16 top-80 text-gray-400 cursor-pointer">
+    <pre class="font-display">
+　　　　　 　 ____        
+　　　　　／＞　　フ     
+　　　　　| 　_　 _ l  
+　 　　　／` ミ＿xノ
+　　 　 /　　　 　 |   
+　　　 /　 ヽ　　 ﾉ
+　 　 │　　|　|　|
+　／￣|　　 |　|　|
+　| (￣ヽ＿ヽ)__) __)
+　＼二つ
+    </pre>
+</div>
 
-    let intervalId;
-    const interval = 2.5
-    const emojis = $state(['🌱', '🖋️', '🎻', '✏️'])
-    let currentEmoji = $derived(emojis[0])
-
-    function changeEmoji() {
-        let popped: string = emojis.shift()
-        emojis.push(popped) 
-    }
-    onMount(() => {
-        intervalId = setInterval(changeEmoji, interval * 1000)
-
-        return() => {
-            clearInterval(intervalId)
-        }
-    })
-
-    onDestroy(() => {
-        if (intervalId) {
-            clearInterval(intervalId)
-        }
-    })
-</script>
+<div class="absolute right-25 top-140 text-gray-400 cursor-pointer">
+    <pre class="font-display">
+⠀ ／l、
+（ﾟ､ ｡ ７
+⠀ l、ﾞ ~ヽ
+  じしf_, )ノ
+</pre>
+</div>

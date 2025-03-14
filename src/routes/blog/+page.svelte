@@ -11,6 +11,6 @@
 　| (￣ヽ＿ヽ)__) __)
 　＼二つ
     </pre>
-    <a href="/" class="cursor-pointer font-mono hover:underline">There's nothing here, go back...</a>
+    <a href="/" class="cursor-pointer font-mono hover:underline">Coming soon...</a>
 </div>
 
